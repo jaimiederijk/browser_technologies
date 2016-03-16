@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML5 SVG demo</title>
+    <style type="text/css">
+     .nicolas_cage {
+         background: url('harmontown.jpg');
+         width: 20px;
+         height: 15px;
+     }
+     .fallback {
+     }
+    </style>
+  </head>
+<body>
+<svg xmlns="http://www.w3.org/2000/svg" style="width:0; height:0; display:0">
+ <style>
+ <![CDATA[ 
+  .fallback { background: none; background-image: none; display: none; }
+ ]]>
+ </style>
+</svg>
+
+<!-- inline svg -->
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40">
+  <switch>
+     <circle cx="20" cy="20" r="18" stroke="grey" stroke-width="2" fill="#99FF66" />
+     <foreignObject>
+         <div class="nicolas_cage fallback"></div>
+     </foreignObject>
+  </switch>
+</svg>
+<hr/>
+<!-- external svg -->
+    <object type="image/svg+xml" data="circle_orange.svg">
+     <div class="nicolas_cage fallback"></div>
+    </object>
+</body>
+</html>
