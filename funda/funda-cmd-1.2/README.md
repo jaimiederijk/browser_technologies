@@ -9,7 +9,10 @@ het draait bij deze app wel om de afbeeldingen dus geen afbeeldingen is geen opt
 Dit kan bijvoorbeeld met srcset.
 ```
 <picture>
-	<source srcset=""
+    <source srcset="{{ FotoLargest }}" media="(min-width: 1280px)">
+    <source srcset="{{ FotoLarge }}" media="(min-width: 800px)">
+    <source srcset="{{ FotoMedium }}" media="(min-width: 320px)">
+    <img src="{{ Foto }}" alt="afbeelding van het huis">    
 </picture>
 ```
 ## fonts
@@ -28,16 +31,13 @@ In html een waarschuwing geplaatst en deze vervolgens weggehaald met javascript 
 ```
 
 ## kleur
-goed contrast gebruiken.
+goed contrast gebruiken. Test doormiddel van plugins die kleuren uitzetten.
 
 ## breedband
 afbeeldingen komen langzaam binnen. spinner ofzo gebruiken. worden nu in een goede volgorde ingeladen.
 
-## cookies
-nog geen cookies gebruikt
-
 ## hotspots
-https gebruiken
+https gebruiken.
 
 ## content blocker
 verander beranglijke plaatjes wannneer het kan in inline svg. Deze worden dan niet geblokeerd.
