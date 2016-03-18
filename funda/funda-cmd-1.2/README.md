@@ -1,7 +1,7 @@
 # funda-cmd
 project1 funda
 
-browser technologies
+## browser technologies opdracht 1.2
 
 ## afbeeldingen
 alleen afbeeldingen binnen halen die passen op het scherm. deze optie is er bij de funda api.
