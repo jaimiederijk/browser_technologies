@@ -6,12 +6,26 @@ project1 funda
 ## afbeeldingen
 alleen afbeeldingen binnen halen die passen op het scherm. deze optie is er bij de funda api.
 het draait bij deze app wel om de afbeeldingen dus geen afbeeldingen is geen optie.
-
+Dit kan bijvoorbeeld met srcset.
+```
+<picture>
+	<source srcset=""
+</picture>
+```
 ## fonts
-niet gebruikt.
+gebruik fallback fonts.
+font-family:'open sans','Helvetica','Sans-Serif';
 
 ## geen javascript
 zonder javascript geen data en dus geen content. gebruik waarchuwing.
+In html een waarschuwing geplaatst en deze vervolgens weggehaald met javascript dus wanneer js het niet doet wordt de waarschuwing ook niet weggehaald.
+
+```
+    <section id="javascript">
+        <h2>please enable Javascript</h2>
+        <a href="http://www.enable-javascript.com/">How to</a>
+    </section>
+```
 
 ## kleur
 goed contrast gebruiken.
@@ -26,15 +40,16 @@ nog geen cookies gebruikt
 https gebruiken
 
 ## content blocker
+verander beranglijke plaatjes wannneer het kan in inline svg. Deze worden dan niet geblokeerd.
 
 ## localstorage
+Zet de user setting ook in een database op de server. wannneer localstorage het niet doet haal je daar de informatie vandaan.
 
-## cdn
-
-## addblocker
+## Screenreader
+euro teken &euro; in de tekst prijs verandert.
 
 ## muis
-tabindex op de buttons en focus style.
+Tabindex op de buttons en focus style en een goede html flow.
 
 
 

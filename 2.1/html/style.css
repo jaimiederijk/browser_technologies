@@ -1,0 +1,22 @@
+.container {
+    // default
+    display: block;
+    width: 100%;
+    width: 100vw;
+    text-align: center;
+
+    // flexbox
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+.container-inner {
+    // default
+    display: inline-block;
+    max-width: 10em;
+    max-width: 10vw;
+    max-height: 30em;
+    margin: .3em .7em;
+    text-align: left;
+
+}

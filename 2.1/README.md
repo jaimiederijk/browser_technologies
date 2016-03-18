@@ -20,4 +20,42 @@ height:20px;
 height:4vh;
 
 ### flexbox
-flexbox wordt ook niet altijd ondersteund. De meest gebruikte functie van flexbox om elementen naast elkaar te zetten kan worden opgevangen doormiddel van inline-block. dit kan gedeclareert worden zonder flexbox te storen. Inline block is minder fancy maar behoud in de meeste gevallen de bedoelde layout.  
+flexbox wordt ook niet altijd ondersteund. De meest gebruikte functie van flexbox om elementen naast elkaar te zetten kan worden opgevangen doormiddel van inline-block. dit kan gedeclareert worden zonder flexbox te storen. Inline block is minder fancy maar behoud in de meeste gevallen de bedoelde layout.
+
+```
+.container {
+    // default
+    display: block;
+    width: 100%;
+    text-align: center;
+
+    // flexbox
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+.container-inner {
+    // default
+    display: inline-block;
+    max-width: 10em;
+    max-height: 30em;
+    margin: .3em .7em;
+    text-align: left;
+
+}
+```
+
+##js
+
+### array.filter
+creert een nieuwe array bestaand uit de gefilterde elementen. Wanneer je deze method niet kan gebruiken dan kan je hetzelfde doen met een for loop die in de javascript core hoort en het dus wel doet.
+
+```
+for (var i = 0; i < cityParts.length; i++) {
+		if(citypart[i].prijs>500){
+				var part = cityParts[i];
+
+				avgData.push({"avg":cityParts[i].prijs});
+		}
+};
+```
