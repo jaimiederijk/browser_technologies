@@ -10,7 +10,7 @@ Wanneer dit niet lukt gaat de app over op HTML Geolocation. Waarna via googlemap
 
 
 ### geolocation ondersteuning
-![](/researchimages/geo.png) 
+![](/funda/funda-cmd-2.2/researchimages/geo.png) 
 
 
 
