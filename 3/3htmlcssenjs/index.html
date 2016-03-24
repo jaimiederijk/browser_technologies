@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>web dev</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="web dev" />
+    <meta name="author" content="Jaimie de Rijk" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style.css" media="screen" rel="stylesheet" type="text/css" />
+    <script>
+        document.createElement('header');
+        document.createElement('section');
+    </script>
+    
+</head>
+<body>
+    <header>
+        <h1>Boodschappenlijst</h1>
+    </header>
+    <section id= "list">
+        <textarea rows="4" cols="50">
+            tosti lijst
+        </textarea>
+    </section>
+    <section id="suggestions">
+        <h2>Suggesties</h2>
+        <fieldset id="bread">
+            
+            <legend>Brood</legend>
+            
+            <label id="white-bread" for="white-bread" draggable="true">Wit Brood</label>
+            <input id="white-bread-input" type="radio" name="bread" value="white-bread" checked="checked">
+
+            <label id="brown-bread" for="brown-bread" draggable="true">Bruin Brood</label>
+            <input id="brown-bread-input" type="radio" name="bread" value="brown-bread">
+
+        </fieldset>
+        <fieldset id="toppings">
+            
+            <legend>Beleg</legend>
+            
+            <label id="ingredient-young" for="ingredient-tomato" draggable="true">Jong belegen kaas</label>
+            <input id="ingredient-young-input" type="checkbox" name="ingredient[]" value="youngcheese">
+
+            <label id="ingredient-cheese" for="ingredient-cheese" draggable="true">Belegen kaas</label>
+            <input id="ingredient-cheese-input" type="checkbox" name="ingredient[]" value="cheese">
+
+            <label id="ingredient-ham" for="ingredient-ham" draggable="true">Ham</label>
+            <input id="ingredient-ham-input" type="checkbox" name="ingredient[]" value="ham">
+
+            <label id="ingredient-latuce" for="ingredient-latuce" draggable="true">Sla</label>
+            <input id="ingredient-latuce-input" type="checkbox" name="ingredient[]" value="latuce">
+
+            <label id="ingredient-mozarella" for="ingredient-mozarella" draggable="true">Mozarella</label>
+            <input id="ingredient-mozarella-input" type="checkbox" name="ingredient[]" value="mozarella">
+
+            <label id="ingredient-pesto" for="ingredient-pesto" draggable="true">Pesto</label>
+            <input id="ingredient-pesto-input" type="checkbox" name="ingredient[]" value="pesto">
+
+            <label id="ingredient-butter" for="ingredient-butter" draggable="true">Boter</label>
+            <input id="ingredient-butter-input" type="checkbox" name="ingredient[]" value="butter">
+
+        </fieldset>
+    </section>
+    <script type="text/javascript" src="app.js"></script>        
+</body>
+</html>

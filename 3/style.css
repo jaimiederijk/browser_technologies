@@ -1,0 +1,129 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-size: 18px;
+	font-family: "Helvetica Neue", Helvetica, sans-serif;
+	overflow: hidden;
+}
+
+header, nav, article, section {
+	display: block;
+}
+
+header {
+	text-align: center;
+	height: 6rem;
+	position: fixed;
+	width: 100vw;
+	background-color: tomato;
+}
+
+header h1 {
+	font-size: 2rem;
+}
+
+nav ul li {
+	display: inline-block;
+	background-color: rgba(0,200,10,1);
+	width: calc(50% - 0.2rem);
+	height: 2rem;
+}
+
+nav a {
+	color: white;
+	text-decoration: none;
+	font-size: 1rem;
+	line-height: 1.8rem;
+}
+
+p, h1, h2, h3, ul {
+	margin: 0.5rem;
+}
+
+@keyframes target {
+	0% {background-color: rgba(0,0,0,0);}
+	50% {background-color: lime;}
+	100% {background-color: rgba(0,0,0,0);}
+}
+
+article:target {
+	background-color: rgba(0,0,0,0);
+	animation: target 1s linear;
+}
+
+.product {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	height: 5rem;
+	width: 100%;
+	background-color: rgba(0,200,10,0.7);
+}
+
+.product img {
+	height: 100%;
+}
+
+.discription-wrap {
+	width: 100%;
+	align-self: stretch;
+	background-color: rgba(255,255,255,0.4);
+}
+
+.discription-wrap h3 {
+}
+.discription-wrap p {
+}
+
+.product button {
+	width: 15rem;
+	margin: 0;
+	padding: 0;
+}
+
+#products, #list {
+	height: calc(100vh - 6rem);
+	padding-top: 6rem;
+	background-color: rgba(0,0,0,0);
+	overflow: scroll;
+}
+
+article[draggable] {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  /* Required to make elements draggable in old WebKit */
+  -khtml-user-drag: element;
+  -webkit-user-drag: element;
+}
+
+article[draggable] img {
+	pointer-events: none;
+}
+
+.article.over {
+  border: 2px dashed #000;
+}
+
+@media (min-width: 42em) {
+
+	body {
+		overflow: auto;
+	}
+
+	#products, #list {
+		height: calc(100vh - 6rem);
+		padding-top: 6rem;
+		xoverflow: auto;
+		width: 49vw;
+		display: inline-block;
+	}
+}
+
+.hidden {
+	display: none;
+}
