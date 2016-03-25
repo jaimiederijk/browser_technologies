@@ -210,6 +210,7 @@ var data = require('./data');
 // nederlandse objecten omdat de data nederlands is
 var queryCreator = {
 	city : function () {
+		askUser ();
 		var city;
 		city = geoplugin_city();
 		if (city =="") {

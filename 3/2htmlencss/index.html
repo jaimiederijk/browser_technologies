@@ -18,7 +18,7 @@
     <header>
         <h1>Boodschappenlijst</h1>
     </header>
-    <section>
+    <section id= "list">
         <textarea rows="4" cols="50">
             tosti lijst
         </textarea>
@@ -29,37 +29,37 @@
             
             <legend>Brood</legend>
             
-            <label for="white-bread" draggable="true">Wit Brood</label>
-            <input id="white-bread" type="radio" name="bread" value="white-bread" checked="checked">
+            <label id="white-bread" for="white-bread" draggable="true">Wit Brood</label>
+            <input id="white-bread-input" type="radio" name="bread" value="white-bread" checked="checked">
 
-            <label for="brown-bread" draggable="true">Bruin Brood</label>
-            <input id="brown-bread" type="radio" name="bread" value="brown-bread">
+            <label id="brown-bread" for="brown-bread" draggable="true">Bruin Brood</label>
+            <input id="brown-bread-input" type="radio" name="bread" value="brown-bread">
 
         </fieldset>
         <fieldset id="toppings">
             
             <legend>Beleg</legend>
             
-            <label for="ingredient-tomato" draggable="true">Jong belegen kaas</label>
-            <input id="ingredient-tomato" type="checkbox" name="ingredient[]" value="youngcheese">
+            <label id="ingredient-young" for="ingredient-tomato" draggable="true">Jong belegen kaas</label>
+            <input id="ingredient-young-input" type="checkbox" name="ingredient[]" value="youngcheese">
 
-            <label for="ingredient-cheese" draggable="true">Belegen kaas</label>
-            <input id="ingredient-cheese" type="checkbox" name="ingredient[]" value="cheese">
+            <label id="ingredient-cheese" for="ingredient-cheese" draggable="true">Belegen kaas</label>
+            <input id="ingredient-cheese-input" type="checkbox" name="ingredient[]" value="cheese">
 
-            <label for="ingredient-ham" draggable="true">Ham</label>
-            <input id="ingredient-ham" type="checkbox" name="ingredient[]" value="ham">
+            <label id="ingredient-ham" for="ingredient-ham" draggable="true">Ham</label>
+            <input id="ingredient-ham-input" type="checkbox" name="ingredient[]" value="ham">
 
-            <label for="ingredient-latuce" draggable="true">Sla</label>
-            <input id="ingredient-latuce" type="checkbox" name="ingredient[]" value="latuce">
+            <label id="ingredient-latuce" for="ingredient-latuce" draggable="true">Sla</label>
+            <input id="ingredient-latuce-input" type="checkbox" name="ingredient[]" value="latuce">
 
-            <label for="ingredient-mozarella" draggable="true">Mozarella</label>
-            <input id="ingredient-mozarella" type="checkbox" name="ingredient[]" value="mozarella">
+            <label id="ingredient-mozarella" for="ingredient-mozarella" draggable="true">Mozarella</label>
+            <input id="ingredient-mozarella-input" type="checkbox" name="ingredient[]" value="mozarella">
 
-            <label for="ingredient-pesto" draggable="true">Pesto</label>
-            <input id="ingredient-pesto" type="checkbox" name="ingredient[]" value="pesto">
+            <label id="ingredient-pesto" for="ingredient-pesto" draggable="true">Pesto</label>
+            <input id="ingredient-pesto-input" type="checkbox" name="ingredient[]" value="pesto">
 
-            <label for="ingredient-butter" draggable="true">Boter</label>
-            <input id="ingredient-butter" type="checkbox" name="ingredient[]" value="butter">
+            <label id="ingredient-butter" for="ingredient-butter" draggable="true">Boter</label>
+            <input id="ingredient-butter-input" type="checkbox" name="ingredient[]" value="butter">
 
         </fieldset>
     </section>

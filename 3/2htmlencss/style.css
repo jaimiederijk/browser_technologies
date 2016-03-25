@@ -1,10 +1,39 @@
-IE =<8 FIXES
+/*IE 8 FIXES*/
 
-*/
 header, section {
 	display: block;
 }
 
+#draglist {
+	min-height: 2em;
+	background-color: #FFC554;
+    border: solid #000;
+}
+h2 {
+	padding: 0 1rem;
+}
+label {
+	display: block;
+	border:dotted;
+	margin: 1rem;
+}
+label:hover {
+	cursor: move;
+}
+
+[draggable] {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  /* Required to make elements draggable in old WebKit */
+  -khtml-user-drag: element;
+  -webkit-user-drag: element;
+}
+
+.hidden {
+	display: none;
+}
 
 body {
 	background-color: #F0F8FF;

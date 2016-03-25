@@ -3,22 +3,30 @@
 		init: function() {
 			if ( 'draggable' in document.createElement("div") && !/Mobile|Android|Slick\/|Kindle|BlackBerry|MSIE|Opera Mini|MSIE|Opera Mobi/i.test(navigator.userAgent)  ) {
 				dragEvents.attachEvent();
-				enhance.createList()			
-			}		
+				enhance.createList();
+				enhance.inputsHidden();
+			}
 		}
 	};
 
 	var htmlElements = {
 		labels: document.querySelectorAll('label'),
+		inputs: document.querySelectorAll('input'),
 		list:document.querySelector('#list'),
 		suggestion:document.querySelector('#suggestions')
 	};
 
 	var enhance = {
 		createList : function () {
-			var list = htmlElements.list
-			var dragList = "<div id='draglist'></div>";//
+			var list = htmlElements.list;
+			var dragList = "<h2>Benodigheden voor een tosti</h2><div id='draglist'></div>";//
 			list.innerHTML = dragList;
+		},
+		inputsHidden : function () {
+			var inputs = htmlElements.inputs;
+			for (var i = 0; i < inputs.length; i++) {
+				inputs[i].classList.add('hidden');
+			};
 		}
 	};
 
