@@ -11,13 +11,27 @@
     
 </head>
 <body>
+    <section id="javascript">
+        <h2>please enable Javascript</h2>
+        <a href="http://www.enable-javascript.com/">How to</a>
+    </section>
 	<!--  http://www.sitepoint.com/css3-pong-insane-things-to-do-with-css/ -->
-	<h1>CSS PONG</h1>
-	<div id="court">
-	    <div id="horizontal">
-		<span id="ball"></span>
-	    </div>
-	</div>
+	<section id="prestart">
+        <h1>Pong</h1>
+        <button id="startbutton" class="hidden">start</button>
+        <div id="court">
+            <span id="targetzone"></span>
+            <div id="horizontal" class="horizontalAnimation">
+                <span id="ball"  class="ballAnimation"></span>
+                <span id="player1"></span>
+                <span id="player2"></span>
+            </div>
+        </div>        
+    </section>
+    <section id="pong_game">
+        <canvas id="canvas" class="hidden"></canvas>
+    </section>
+    <!--   <script type="text/javascript" src="cdnjs.cloudflare.com/ajax/libs/classlist/2014.01.31/classList.min.js"></script> -->
     <script type="text/javascript" src="javascript.js"></script>     
 </body>
 </html>
