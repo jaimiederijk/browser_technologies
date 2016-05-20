@@ -15,7 +15,7 @@ Met css erbij komen er al wat meer mogelijkheden. Voorgaande Html wordt verwijde
 
 ## Javascript
 Als javascript het doet kan er toch echt pong gespeeld worden. Met multitouch op apparaten die dat kunnen. Touch wordt door niet veel browsers ondersteund. Daarom heb ik meerdere systemen om de batjes te besturen. Zo ook multi keyboard ondersteuning. De standaard keyboard events kunnen maar een keypress tegelijk aan. De functie die ik gevonden heb slaat de keydown events op en verwijderd ze na een key up. Op deze manier kunnen meerdere keypreses gebruikt worden om de twee batjes te besturen. Er kan ook met muisevents worden bestuurd. Muisclicks zetten een target voor de batjes om naar toe te gaan. Door te kijken aan welke kant van het veld de click plaats vindt bepaal ik welke speler het was. Voor de multitouch wordt ook elk event opgeslagen dit is omdat safari de touch events niet goed ondersteunt.  
-![alt](/canitouch.png)
+![alt](canitouch.png)
 
 
 [live versie](http://jaimiederijk.nl/browsertech/)
