@@ -1,5 +1,5 @@
 'use strict';
-//(function(){
+(function(){
 
 	var htmlElements = {
 		javascriptWarning: document.querySelector('#javascript'),
@@ -269,8 +269,7 @@
 		update : function() {
 			var height = pong.variables.height;
 			var width = pong.variables.width;
-			// Update scores
-			//updateScore(); 
+
 			this.checkKeys();
 
 			this.movePaddles();
@@ -303,7 +302,6 @@
 				// Collide with walls, If the ball hits the sides
 				if(pong.ball.x + pong.ball.r > width) {
 					pong.ball.x = width - pong.ball.r;
-					
 					pong.score(1)
 				} 
 				
@@ -340,19 +338,9 @@
 		    }
 		},
 		touchCheck : function (touch) {
-			//console.log(touch);
 			
 			var mx = touch.x;
-			// var my = touch.y;
-			// if(mx >= pong.restartBtn.x && mx <= pong.restartBtn.x + pong.restartBtn.w) {
-			// 	pong.ball.x = 20;
-			// 	pong.ball.y = 20;
-			// 	pong.points = 0;
-			// 	pong.ball.vx = 4;
-			// 	pong.ball.vy = 8;
-			// 	pong.animLoop();
-				
-			// } 
+			
 			if (mx>pong.variables.width/2) {
 				//right player
 				pong.variables.players[2].targetPos = pong.variables.players[2].targetPos + touch.offset.y; //my-pong.variables.players[2].h/2;
@@ -427,27 +415,12 @@
 				ball.x = p.w + ball.r;
 					
 			}
-			
-			//points++;
-			//increaseSpd();
-			
-			
-			//particlePos.x = ball.x;
-			//flag = 1;
 		},
 		btnClick : function (e) {
 			var mx = e.clientX,
 			my = e.clientY;
-			if(mx >= pong.restartBtn.x && mx <= pong.restartBtn.x + pong.restartBtn.w) {
-				pong.ball.x = 20;
-				pong.ball.y = 20;
-				pong.points = 0;
-				pong.ball.vx = 4;
-				pong.ball.vy = 8;
-				pong.animLoop();
-				
-			} 
-			else if (mx>pong.variables.width/2) {
+		
+			if (mx>pong.variables.width/2) {
 				//right player
 				pong.variables.players[2].targetPos = my-pong.variables.players[2].h/2;
 			} else if (mx<pong.variables.width/2) {
@@ -465,8 +438,6 @@
 		},
 		gameOver : function () {
 			this.restart()
-			// pong.cancelRequestAnimFrame.call(window, pong.variables.init);
-			// pong.restartBtn.draw();
 		},
 		animLoop : function () {
 			pong.variables.init = pong.requestAnimFrame.call(window, pong.animLoop);
@@ -479,14 +450,7 @@
 
 	};
 
-
-
-
-
 	app.init();
 
-
-
-
-//})();
+})();
 
