@@ -85,7 +85,7 @@
 		        }
 		    }).bind(this));
 		},
-		KeyListener :function() {
+		KeyListener :function() {//http://blog.mailson.org/2013/02/simple-pong-game-using-html5-and-canvas/
 		    this.pressedKeys = [];
 		 
 		    this.keydown = function(e) {
@@ -119,7 +119,7 @@
 	};
 
 	var pong = {
-		//http://cssdeck.com/labs/ping-pong-game-tutorial-with-html5-canvas-and-sounds
+		//inspired by http://cssdeck.com/labs/ping-pong-game-tutorial-with-html5-canvas-and-sounds
 		init: function() {
 			if (htmlElements.canvas.classList) { 
 			    htmlElements.canvas.classList.remove("hidden");
