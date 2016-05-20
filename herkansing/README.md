@@ -2,6 +2,7 @@
 
 ## Use Case: Ik wil samen met mijn vriendin, Roxy achter de Proxy, een spelletje pong spelen.
 Het doel is om vermaakt te worden doormiddel van een spelletje pong. Waarbij de enhanced versie Multi touch gebruikt.
+[live versie](http://jaimiederijk.nl/browsertech/)
 
 ## HTML
 Een game vereist interactiviteit om te spelen maar op het web is hieroor javascript nodig. Dus zette ik een stap terug met de html only pagina. Hoe kan ik de gebruikers helpen om pong te spelen en hoe zorg ik ervoor dat ze vermaakt worden. Mijn oplossing hiervoor was om een lachwekkend Imaginary Pong Formulier te maken. Dit is bedoeld als vermaak. Hierop kan de gebruiker zijn score bijhouden en via radio buttons de positie van de bal. En met de sleepbare text area een positie van het batje. 
@@ -17,7 +18,7 @@ Als javascript het doet kan er toch echt pong gespeeld worden. Met multitouch op
 ![alt](canitouch.png)
 
 
-[live versie](http://jaimiederijk.nl/browsertech/)
+
 
 ## Andere interresante pong
 [browser pong](http://stewd.io/pong/)
