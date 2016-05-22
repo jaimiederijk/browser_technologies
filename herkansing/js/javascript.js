@@ -2,15 +2,15 @@
 (function(){
 
 	var htmlElements = {
-		javascriptWarning: document.querySelector('#javascript'),
-		gameSection : document.querySelector('#pong_game'),
-		prestart : document.querySelector('#prestart'),
-		canvas: document.querySelector('#canvas'),
-		court: document.querySelector('#court'),
-		ball: document.querySelector('#ball'),
-		player1: document.querySelector('#player1'),
-		player2: document.querySelector('#player2'),
-		button : document.querySelector('#startbutton')
+		javascriptWarning: document.getElementById('javascript'),
+		gameSection : document.getElementById('pong_game'),
+		prestart : document.getElementById('prestart'),
+		canvas: document.getElementById('canvas'),
+		court: document.getElementById('court'),
+		ball: document.getElementById('ball'),
+		player1: document.getElementById('player1'),
+		player2: document.getElementById('player2'),
+		button : document.getElementById('startbutton')
 	};
 
 	var app = {
